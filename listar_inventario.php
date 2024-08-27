@@ -42,6 +42,7 @@
                         <th>Placa de Vídeo</th>
                         <th>Sistema Operacional</th>
                         <th>Alterar</th>
+                        <th>Deletar</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -60,6 +61,7 @@
                         echo "<td>" . $row['placa_video'] . "</td>";
                         echo "<td>" . $row['sistema_operacional'] . "</td>";
                         echo "<td><a href='altera_inventario.php?id=" . $row['id'] . "'>Alterar</a></td>";
+                        echo "<td><a href='deleta_inventario.php?id=" . $row['id'] . "'>Deletar</a></td>";
                         echo "</tr>";
                     }
                     ?>
